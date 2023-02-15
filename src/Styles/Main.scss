@@ -1,4 +1,15 @@
 @import "Abstracts/Variables.scss";
 @import "Abstracts/Mixins.scss";
 
-@import "Base/Base.scss"
+@import "Base/Base.scss";
+
+@import "Components/LeftMetrics/LeftMetrics.scss";
+@import "Components/LeftMetrics/LeftMetricsHeader/leftMetricsHeader.scss";
+@import "Components/LeftMetrics/Temperatures/Temperatures.scss";
+@import "Components/LeftMetrics/AirMetrics/AirMetrics.scss";
+@import "Components/LeftMetrics/NextDays/NextDayCard.scss";
+
+@import "Components/RightMetrics/RightMetrics.scss";
+@import "Components/RightMetrics/CityHeader/CityHeader.scss";
+@import "Components/RightMetrics/Clocks/Clocks.scss";
+@import "Components/RightMetrics/UVQualities/UVQualities.scss"

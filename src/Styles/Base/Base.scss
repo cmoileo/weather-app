@@ -1,5 +1,7 @@
 * {
-    margin: 0
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 body {
@@ -10,4 +12,24 @@ body {
 
 p, h1, h2, h3, input, button {
     font-family: 'Inter';
+    font-style: normal;
+    color: $main-white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.App {
+    display: flex;
+}
+
+.main-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
 }

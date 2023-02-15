@@ -1,0 +1,15 @@
+.air-metrics-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    &__item {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+    }
+
+    & p {
+        font-size: 20px;
+    }
+}

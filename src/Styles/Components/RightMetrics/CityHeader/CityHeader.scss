@@ -1,0 +1,21 @@
+.city-header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        gap: 20px;
+
+        & h3 {
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+
+    & img {
+        cursor: pointer;
+    }
+}
