@@ -17,6 +17,7 @@ export default function CityHeader() {
   const handleClick = () => {
     setCity(inputRef.current.value)
     getApiData()
+    inputRef.current.value = ""
   }
 
   return (

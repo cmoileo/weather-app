@@ -10,7 +10,7 @@ export default function Temperatures() {
 
   return (
     <div className="temperatures-main-container">
-        <h1>{tempMetrics === 'cel' ? (apiData?.current.temp+ -273,15) : (apiData?.current.temp + - -459,67)}°</h1>
+        <h1>{tempMetrics ? (Math.round(apiData?.current.temp+ -273.15)) : (Math.round(apiData?.current.temp+ -273.15) * 9/5 + 32)}°</h1>
         <p>{todayDate}</p>
         <div className="temperatures-main-container__day-date">
             <p>{todayDay}</p>

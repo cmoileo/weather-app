@@ -12,7 +12,7 @@ export default function NextDays() {
       <div className="next-days-container">
 {apiData?.daily && Object.keys(apiData.daily).map((keyName, i) => (
     <div className="day-card-container" id={keyName} key={keyName}>
-        <h3>{tempMetrics === 'cel' ? (apiData.daily[keyName].temp.day+ -273,15) : (apiData.current.temp + - -459,67)}°</h3>
+        <h3>{tempMetrics ? Math.round((apiData.daily[keyName].temp.day+ -273.15)) : Math.round((apiData.daily[keyName].temp.day + -273.15) *9/5 + 32) }°</h3>
         <img src={CloudIcon} className="day-card-container__icon" alt="" />
         <p>Friday</p>
     </div>

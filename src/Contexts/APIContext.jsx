@@ -6,7 +6,7 @@ export const APIContextProvider = ({children }) => {
     const [apiData, setApiData] = useState(null);
     const [city, setCity] = useState('Bordeaux, France');
 
-    const [tempMetrics, setTempMetrics] = useState("cel")
+    const [tempMetrics, setTempMetrics] = useState(true)
 
     async function getApiData() {
       let coordinates = await fetch(
