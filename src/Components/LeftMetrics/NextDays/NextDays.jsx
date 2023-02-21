@@ -8,8 +8,6 @@ export default function NextDays() {
     console.log(apiData)
   }, 2000);
 
-
-
   return (
       <div className="next-days-container">
 {apiData?.daily && Object.keys(apiData.daily).map((keyName, i) => (
