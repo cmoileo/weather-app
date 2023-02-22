@@ -1,7 +1,7 @@
 .next-days-container {
-    margin-top: 100px;
+    margin-top: 75px;
     display: flex;
-    width: 80%;
+    width: 90%;
     overflow-x: auto;
     gap: 50px;
     padding-bottom: 15px;
@@ -25,8 +25,8 @@
 }
 
 .day-card-container {
-    min-width: 150px;
-    height: 250px;
+    min-width: 120px;
+    height: 200px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(0.569258px);
@@ -37,11 +37,15 @@
     cursor: pointer;
 
     & h3 {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 300;
     }
 
     & p {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    & img {
+        width: 80%;
     }
 }

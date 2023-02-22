@@ -1,5 +1,5 @@
 .switch__container {
-    width: 100px;
+    width: 70px;
   }
   
   .switch {
@@ -18,8 +18,8 @@
   
   .switch--shadow + label {
     padding: 2px;
-    width: 90px;
-    height: 45px;
+    width: 60px;
+    height: 30px;
     background-color: #dddddd;
     opacity: .5;
     border-radius: 30px;
@@ -40,25 +40,25 @@
     transition: background 0.4s;
   }
   .switch--shadow + label:after {
-    width: 47px;
+    width: 31px;
     background-color: #ffffff;
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: all 0.4s;
   }
   .switch--shadow:checked + label:after {
-    transform: translateX(45px);
+    transform: translateX(30px);
   }
 
 .metrics-button-cara {
     z-index: -1;
     position: relative;
-    font-size: 28px;
+    font-size: 18px;
     color: white;
     width: 65%;
     display: flex;
     justify-content: space-between;
     margin: auto;
-    margin-top: -42px;
-    margin-left: 13px;
+    margin-top: -28px;
+    margin-left: 8px;
 }

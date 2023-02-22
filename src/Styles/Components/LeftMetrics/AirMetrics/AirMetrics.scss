@@ -1,7 +1,7 @@
 .air-metrics-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-top: 30px;
 
     &__item {
         display: flex;
@@ -10,6 +10,6 @@
     }
 
     & p {
-        font-size: 20px;
+        font-size: 16px;
     }
 }
