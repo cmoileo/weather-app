@@ -8,6 +8,10 @@ body {
     background: $main-gradient;
     height: 100vh;
     width: 100vw;
+
+    @media screen and (max-width: 600px) {
+        height: auto;
+    }
 }
 
 p, h1, h2, h3, input, button {
@@ -26,10 +30,24 @@ input:focus {
 
 .App {
     display: flex;
+
+    @media screen and (max-width: 800px) {
+       flex-direction: column;
+       align-items: center;
+    }
 }
 
 .main-container {
     width: 80%;
     margin: auto;
     margin-top: 50px;
+
+    @media screen and (max-width: 1200px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        margin-top: 20px;
+    }
 }

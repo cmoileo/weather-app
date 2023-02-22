@@ -1,5 +1,9 @@
 .main-left-container {
     width: 60vw;
+
+    @media screen and (max-width: 800px) {
+        width: 85%;
+    }
 }
 
 .left-header-container {

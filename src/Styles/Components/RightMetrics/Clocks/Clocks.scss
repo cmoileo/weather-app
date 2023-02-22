@@ -5,6 +5,10 @@
     margin-top: 100px;
     padding-bottom: 75px;
     border-bottom: 1px solid white;
+
+    @media screen and (max-width: 600px) {
+        margin-top: 50px;
+    }
 }
 
 .clock-card-container {
@@ -29,16 +33,35 @@
         align-items: center;
         justify-content: space-around;
         margin-top: 30px;
-        gap: 30px
+        gap: 30px;
+
+        @media screen and (max-width: 1000px) {
+            width: 100px;
+            height: 150px;
+        }
 
         & p {
             font-size: 22px;
             font-weight: 400;
             margin-top: -30px;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 16px;;
+            }
+        }
+
+        & img {
+            @media screen and (max-width: 1000px) {
+                width: 80%;
+            }
         }
 
         &__2 {
             height: 220px;
+
+            @media screen and (max-width: 1000px) {
+                height: 180px;
+            }
         }
     }
 }

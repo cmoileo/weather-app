@@ -5,11 +5,19 @@
         font-size: 120px;
         font-weight: 200;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 80px;
+        }
     }
 
     & p {
         font-size: 20px;
         font-weight: 100;
+
+        @media screen and (max-width: 600px) {
+            font-size: 16px;
+        }
     }
 
     &__day-date {
@@ -18,6 +26,10 @@
         width: 45%;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width: 600px) {
+            width: 60%;
+        }
 
         &__line {
             width: 1px;

@@ -36,16 +36,34 @@
     justify-content: space-around;
     cursor: pointer;
 
+    @media screen and (max-width: 600px) {
+        width: 80px;
+        height: 160px;
+        padding: 10px 0 10px 0;
+    }
+
     & h3 {
         font-size: 30px;
         font-weight: 300;
+
+        @media screen and (max-width: 600px) {
+            font-size: 24px;
+        }
     }
 
     & p {
         font-size: 16px;
+
+        @media screen and (max-width: 600px) {
+            font-size: 14px;
+        }
     }
 
     & img {
         width: 80%;
+
+        @media screen and (max-width: 600px) {
+            width: 60%;
+        }
     }
 }
