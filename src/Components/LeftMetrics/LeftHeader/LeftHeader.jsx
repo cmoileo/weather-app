@@ -1,9 +1,7 @@
-import { useRef } from "react"
-import NightIcon from "../../../Assets/night-icon.svg"
 import useAPIContext from "../../../Contexts/APIContext"
 
 export default function LeftHeader() {
-  const {tempMetrics, setTempMetrics} = useAPIContext()
+  const {tempMetrics, setTempMetrics, apiData} = useAPIContext()
 
   const handleClick = () => {
    setTempMetrics(!tempMetrics)
@@ -11,7 +9,7 @@ export default function LeftHeader() {
 
   return (
     <div className="left-header-container">
-        <img src={NightIcon} alt="" className="main-icon" />
+        <img src={`http://openweathermap.org/img/wn/${apiData?.current.weather[0].icon}@2x.png`} alt="" className="main-icon" />
         <div className="metrics-button">
             <div className="switch__container">
                 <input id="switch-shadow" className="switch switch--shadow" type="checkbox" onClick={handleClick}/>
