@@ -20,8 +20,6 @@ export default function CityHeader() {
     inputRef.current.value = ""
   }
 
-  console.log(navigator.userAgentData.mobile)
-
   return (
     <div className="city-header-container">
         <div className='city-header-container__left'>

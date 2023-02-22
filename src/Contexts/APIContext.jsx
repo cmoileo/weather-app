@@ -12,7 +12,7 @@ export const APIContextProvider = ({children }) => {
       let coordinates = await fetch(
         "http://api.openweathermap.org/geo/1.0/direct?q=" +
         city +
-        "&limit=5&appid=592f1fe6fbbdf00e5d4ac9bfee6bf0ae"
+        "&limit=5&appid=" + import.meta.env.VITE_REACT_APP_WEATHER_API_KEY
       ).then((coordinates) => coordinates.json());
       let lat = coordinates[0].lat;
       let lon = coordinates[0].lon;
@@ -21,7 +21,7 @@ export const APIContextProvider = ({children }) => {
         lat +
         "&lon=" +
         lon +
-        "&appid=d057e468d4ec84cf017e94a0d6911d7b"
+        "&appid=" + import.meta.env.VITE_REACT_APP_WEATHER_API_KEY
       );
       const jsonData = await response.json();
       setApiData(jsonData);

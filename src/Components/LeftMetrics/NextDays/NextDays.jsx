@@ -4,8 +4,6 @@ import moment from 'moment'
 export default function NextDays() {
   const {apiData, tempMetrics} = useAPIContext()
 
-  console.log(apiData)
-
   return (
       <div className="next-days-container">
 {apiData?.daily && Object.keys(apiData.daily).map((keyName, i) => (
